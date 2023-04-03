@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="main-container">
+        <aside id="banner">
+            <div class="section-nav">
+                <span class="number">1</span>
+                <div class="inner-box">
+                    <span class="step">Step 1</span>
+                    <span class="section-title">Your info</span>
+                </div>
+            </div>
+            <div class="section-nav">
+                <span class="number">2</span>
+                <div class="inner-box">
+                    <span class="step">Step 2</span>
+                    <span class="section-title">select plan</span>
+                </div>
+            </div>
+            <div class="section-nav">
+                <span class="number">3</span>
+                <div class="inner-box">
+                    <span class="step">Step 3</span>
+                    <span class="section-title">add-ons</span>
+                </div>
+            </div>
+            <div class="section-nav">
+                <span class="number">4</span>
+                <div class="inner-box">
+                    <span class="step">Step 4</span>
+                    <span class="section-title">summary</span>
+                </div>
+            </div>
+        </aside>
+        <div id="content">
+            <header class="header">
+                <h1 id="title"></h1>
+                <span id="reference"></span>
+            </header>
+            <div class="content-box">
+                <section class="user-info content-box">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="userName" id="name" required placeholder="Username...">
+                    </div>
+                    <div id='mid-div'>
+                        <label for="email">Email</label>
+                        <input type="email" name="userEmail" id="email" required placeholder="Email Address...">
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="userPhone" id="phone" required placeholder="e.g.+995 597 77 00 48">
+                    </div>
+                </section>
+                <!--  -->
+                <section class="plan-box">
+                    <div class="each">
+                        <img src="C:/Users/User/Desktop/assets/icon-arcade.png" alt="arcade">
+                        <span class="title">Arcade</span>
+                        <span class="price"></span>
+                    </div>
+                    <div class="each">
+                        <img src="C:/Users/User/Desktop/assets/icon-advanced.png" alt="arcade">
+                        <span class="title">Advanced</span>
+                        <span class="price"></span>
+                    </div>
+                    <div class="each">
+                        <img src="C:/Users/User/Desktop/assets/icon-pro.png" alt="arcade">
+                        <span class="title">Pro</span>
+                        <span class="price"></span>
+                    </div>
+                    <footer class="switcher">
+                        <button class="month-btn">Monthly</button>
+                        <button class="year-btn">Yearly</button>
+                    </footer>
+                </section>
+                <!--  -->
+                <section class="services content-box">
+                    <div class="service-box ">
+                        <input type="checkbox" name="checkbox" id="checkbox1">
+
+                        <div class="info">
+                            <span class="service-title">Online Services</span>
+                            <span class="service-preference">Access To multiply Games</span>
+                        </div>
+                        <span class="service-price">
+
+                        </span>
+
+                    </div>
+                    <div class="service-box">
+                        <input type="checkbox" name="checkbox" id="checkbox2">
+
+                        <div class="info">
+                            <span class="service-title">Larger Storage</span>
+                            <span class="service-preference">Extra 1TB of cloud save</span>
+                        </div>
+                        <span class="service-price">
+
+                        </span>
+
+                    </div>
+                    <div class="service-box">
+                        <input type="checkbox" name="checkbox" id="checkbox3">
+
+                        <div class="info">
+                            <span class="service-title">Costumizable Profile</span>
+                            <span class="service-preference">Costum theme on your profile</span>
+                        </div>
+                        <span class="service-price">
+
+                        </span>
+
+                    </div>
+                </section>
+                <!--  -->
+                <section class="summary">
+                    <h2 class="intro"></h2>
+                    <div class="plan-result">
+                        <div>
+                            <span class="gameType"></span>
+                            <span class="duration-res"></span>
+                        </div>
+                        <span class="plan-price-result"></span>
+                    </div>
+                    <div class="service-result">
+
+                    </div>
+                    <footer class="total-calc">
+                        <div>
+                            <span id="descr">Total per</span><span class='per-duration'></span>
+                        </div>
+                        <span class="total"></span>
+                    </footer>
+                </section>
+                <!--  -->
+                <section class="final smoke">
+                    <img src="C:\Users\User\Desktop\assets\icon-thank-you.png" alt="completed">
+                    <span class="thank">Thank You</span>
+                    <p class="final-txt">
+                        Thanks for fill our form. Your purchase will be sent to you within 30 days.
+                        we will contact you either on <span class="user-email"></span> or on mobile phone:
+                        <span class="user-number"></span>. Thank You <span class="user-name"></span>
+                    </p>
+                </section>
+            </div>
+            <div class="btn-container">
+                <button id="back">Go Back</button>
+                <button id="next">Next Step</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="form_style.js"></script>
+</body>
+
+</html>

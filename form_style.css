@@ -1,0 +1,423 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
+.main-container {
+    margin: 2.5rem auto;
+    width: 60%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#content {
+    width: 70%;
+    min-height: 66.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header {
+    align-self: flex-start;
+    margin-left: 3.5rem;
+}
+
+#title {
+    color: hsl(213, 96%, 18%);
+    font-size: 25px;
+}
+
+#reference {
+    color: hsl(231, 11%, 63%);
+    font-weight: 500;
+}
+
+.content-box {
+    width: 90%;
+    min-height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.content-box>div {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+
+}
+
+.clicked {
+    background-color: hsl(229, 24%, 87%);
+}
+
+#mid-div {
+    align-self: center;
+}
+
+.content-box label {
+    margin-bottom: 0.3rem;
+    color: hsl(213, 96%, 18%);
+}
+
+.content-box input {
+    width: 100%;
+    border-radius: 0.3em;
+    font-size: 16px;
+    height: 1.5em;
+    border: 0.5px solid hsl(229, 24%, 87%);
+}
+
+.btn-container {
+    width: 80%;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#back {
+    background: 0;
+    border: 0;
+    cursor: pointer;
+    color: hsl(231, 11%, 63%);
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#back:hover {
+    color: hsl(232, 6%, 53%);
+}
+
+#next {
+    font-size: 16px;
+    background-color: hsl(213, 96%, 18%);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#next:hover {
+    background-color: hsl(213, 96%, 27%);
+}
+
+#banner {
+    width: 25%;
+    min-height: 68.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 0.7rem;
+    background-image: url('C:/Users/User/Desktop/assets/bg-sidebar-desktop.png');
+    background-size: cover;
+
+}
+
+.section-nav {
+    display: flex;
+    margin: 1.2rem 1rem;
+    width: 80%;
+    align-items: center;
+}
+
+.inner-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.8rem;
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 16px;
+    width: 27px;
+    height: 27px;
+
+}
+
+.section-title {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.step {
+    color: hsl(229, 24%, 87%);
+    font-size: 14px;
+}
+
+/* interacted */
+
+.interacted-step {
+    color: black;
+    background-color: hsl(206, 94%, 87%);
+}
+
+.step1 {
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.plan-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+
+}
+
+.switcher {
+    margin-top: 1rem;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.month-btn,
+.year-btn {
+    background: 0;
+    border: 0;
+    font-size: 18px;
+    color: hsl(228, 100%, 84%);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.clicked {
+    font-weight: 600;
+    color: hsl(354, 84%, 57%);
+}
+
+.plan-box>.each {
+    width: 30%;
+    min-height: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 0.5px solid hsl(229, 24%, 87%);
+    border-radius: 0.4em;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.plan-box>.each:hover {
+    border: 0.5px solid hsl(213, 96%, 18%);
+}
+
+.each>.title {
+    font-size: 16px;
+    color: hsl(213, 96%, 18%);
+    font-weight: 500;
+    align-self: flex-start;
+    margin-left: 0.7em;
+}
+
+.each>.price {
+    font-size: 14px;
+    color: hsl(231, 11%, 63%);
+    font-weight: 400;
+    align-self: flex-end;
+    margin-right: 0.8em;
+}
+
+
+
+.content-box>.service-box {
+    width: 70%;
+    min-height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.7px solid hsl(213, 96%, 18%);
+    border-radius: 0.5em;
+    padding: 0 1.2rem;
+}
+
+.service-box>.info {
+    width: 70%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-box>input {
+    font-size: 25px;
+    width: auto;
+    cursor: pointer;
+}
+
+.service-title {
+    color: hsl(213, 96%, 18%);
+}
+
+.service-preference {
+    color: hsl(231, 11%, 63%);
+
+}
+
+.summary {
+    width: 90%;
+    min-height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    gap: 1.2;
+
+}
+
+.summary>.plan-result {
+    width: 90%;
+    height: 6rem;
+    background-color: hsl(235, 14%, 84%);
+    border-radius: 0.2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding: 0 0.7em;
+
+}
+
+.plan-result .gameType,
+.plan-result .plan-price-result,
+.plan-result .duration-res {
+    color: hsl(354, 84%, 57%);
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.intro {
+    color: hsl(354, 84%, 57%);
+    font-style: italic;
+
+}
+
+.summary>.service-result {
+    width: 90%;
+    height: 4.5rem;
+    background-color: hsl(235, 14%, 84%);
+    border-radius: 0.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 17px;
+    color: hsl(228, 90%, 37%);
+    padding: 0 0.7em;
+}
+
+.summary>.total-calc {
+    width: 90%;
+    min-height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: hsl(243, 100%, 58%);
+    padding: 0 0.7em;
+
+}
+
+.service-res-container {
+    width: 100%;
+    height: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.confirm {
+    font-size: 16px;
+    border: 0;
+    background-color: hsl(243, 100%, 62%);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.confirm:hover {
+    background-color: hsl(243, 63%, 51%);
+}
+
+
+.final {
+    width: 100%;
+    min-height: 66.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank {
+    font-size: 25px;
+    color: hsl(213, 96%, 18%);
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    margin: 0.5em 0;
+
+}
+
+.final-txt {
+    font-size: 16px;
+    width: 80%;
+    color: hsl(231, 11%, 63%);
+
+}
+
+.user-number {
+    color: hsl(354, 84%, 57%);
+
+}
+
+.user-email {
+    color: hsl(243, 100%, 62%);
+    text-decoration: hsl(354, 84%, 57%) underline;
+    text-transform: uppercase;
+}
+
+.user-name {
+    color: hsl(354, 84%, 57%);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+}
+
+.smoke {
+    display: none;
+}
